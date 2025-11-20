@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:couldai_user_app/screens/splash_screen.dart';
 import 'package:couldai_user_app/screens/home_screen.dart';
+import 'package:couldai_user_app/screens/login_screen.dart';
 
 void main() {
   runApp(const KingApp());
@@ -33,6 +34,7 @@ class KingApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashScreen(),
+        '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
       },
     );

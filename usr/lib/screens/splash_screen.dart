@@ -26,7 +26,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     );
 
     Timer(const Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacementNamed('/home');
+      // Navigate to Login instead of Home
+      Navigator.of(context).pushReplacementNamed('/login');
     });
   }
 
